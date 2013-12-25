@@ -17,6 +17,7 @@ int main() {
   // 产生随机序列
   for(i=0; i<MAX_SIZE; ++i) {
     list[i] = rand()%1000;
+    printf("%d  ", list[i]);
   }
   
   for(i=0; i<MAX_SIZE; ++i) {
@@ -30,10 +31,7 @@ int main() {
   }
   
   for(i=0; i<MAX_SIZE; ++i) {
-    printf("%d\t", list[i]);
-    if (i%15 == 0) {
-      printf("\n");
-    }
+    printf("%d  ", list[i]);
   }
   return 0;
 }
